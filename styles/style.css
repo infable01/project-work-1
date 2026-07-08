@@ -16,6 +16,8 @@
   /* выше установили ограничения для секции */
   display: flex;
   align-items: flex-start;
+  background-color: #f2f2f2;
+  position: relative;
 }
 
 .logo {
@@ -69,6 +71,8 @@
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -80,6 +84,53 @@
   right: 0;
   background-color: #2F80ED;
   z-index: 0;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns {
+  display: flex; 
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 80%;
+}
+
+.two-columns__brief {
+  display: flex;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2f80ed;
+  margin: 0;
+}
+
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: 600;
 }
 
 /* и элемента с модификатором вида ключ-значение */
